@@ -14,43 +14,38 @@
 
 <body>
 
-	<header>
-		<div id="logo"></div>
-		<nav>
-			<ul>
-				<li><a href="/link">Home</a></li>
-				<li><a href="/link">Page</a></li>
-			</ul>
-		</nav>
+	<header class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col headerstyle"><img src="graphics/Logo.svg" id="logo"></img></div>
+		</div>
 	</header>
 
-	<main role="main">
-		<article>
-			<h2>Title 1</h2>
-			<p>Content 1</p>
-		</article>
-		<article>
-			<h2>Title 2</h2>
-			<p>Content 2</p>
-		</article>
-	</main>
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="col-sm colstyle">Navigation</nav>
+			<main role="main" class="col-sm-7 colstyle">Main</main>
+			<section class="col-sm colstyle">News</section>
+		</div>
+	</div>
 
-	<section>
-		B				
-	</section>
-
-	<aside>
-		C
-	</aside>
-
-	<footer>
-		<adress>
-            A.N.R.<br>
-            53 rue Jules Verne<br>
-            59960 Neuville-en-Ferrain<br>
-            03 20 54 72 76<br>
-			<a href="mailto:contact@anrfrance.fr">contact@anrfrance.fr</a>
-		</adress>
+	<footer class="container-fluid">
+		<div class="row">
+			<adress class="col">
+                A.N.R.<br>
+                53 rue Jules Verne<br>
+                59960 Neuville-en-Ferrain<br>
+                03 20 54 72 76<br>
+				<a href="mailto:contact@anrfrance.fr">contact@anrfrance.fr</a>
+			</adress>
+			<div class="col">
+				Plan du site<br>
+				Licenses<br>
+				Mentions légales<br>
+				CGUV<br>
+				Paramétrer les cookies
+			</div>
+			<div class="col-md-8"></div>
+		</div>
 	</footer>
 
 </body>
