@@ -19,12 +19,17 @@ body {
 }
 
 .colstyle {
-  background-color: aqua;
-  border-style: solid;
-  border-width: 2px;
-  border-color: blue;
+  background-color: white;
   padding: 10px;
   margin: 10px;
+}
+
+.btn-group {
+  padding: 2px;
+}
+
+nav {
+  width: 100%;
 }
 
 footer {
