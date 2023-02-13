@@ -36,6 +36,17 @@ nav {
   padding: 2px;
 }
 
+.socialmediablock {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.socialmediabutton {
+  display: inline-block;
+}
+
 .main-col {
   padding-left: 5%;
   padding-right: 5%;
