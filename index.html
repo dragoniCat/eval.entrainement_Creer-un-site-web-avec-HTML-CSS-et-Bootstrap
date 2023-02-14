@@ -26,7 +26,205 @@
 
 			<!-- NAVIGATION -->
 			<nav class="col-xl-2 colstyle" data-bs-theme="dark">
-			<div class="whitebackground">
+				<!-- SMALL SCREENS -->
+			<div>
+			<button class="btn btn-secondary d-xl-none" style="width: 100%;" type="button" 
+			data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+				<img src="/graphics/menu-button-of-three-horizontal-lines.png" width="25px" alt="Menu">
+			</button>
+
+			<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" 
+			id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" 
+					aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<!-- Première partie boutons navigation -->
+					<div class="btn-group-vertical btn-block d-grid" role="group" 
+					aria-label="Vertical button group">
+
+						<div class="btn-group" role="group">
+							<button class="btn btn-dark" type="button" href="index.html">
+								<img src="graphics/home_icon.png">
+								Accueil
+							</button>
+						</div>
+
+						<div class="btn-group dropdown" role="group"> <!-- Bouton L'association -->
+							<button class="btn btn-dark dropdown-toggle" type="button" 
+							data-bs-toggle="dropdown" aria-expanded="false">
+								L'association
+							</button>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" 
+								href="https://www.anrfrance.fr/page/123926-qui-sommes-nous">
+									Qui sommes-nous?
+								</a></li>
+								<li><a class="dropdown-item" href="#">Notre équipe</a></li>
+								<li><a class="dropdown-item" href="#">Status</a></li>
+								<li><a class="dropdown-item" href="#">Rapports financiers</a></li>
+								<li><a class="dropdown-item" href="#">Rapports d'activité</a></li>
+								<li><a class="dropdown-item" href="#">Revue de presse</a></li>
+							</ul>
+						</div>
+
+						<div class="btn-group dropdown" role="group"> <!-- Bouton La Fondation CAP NF -->
+							<button class="btn btn-dark dropdown-toggle text-wrap" type="button" 
+							data-bs-toggle="dropdown" aria-expanded="false">
+								La Fondation CAP NF
+							</button>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">La Fondation</a></li>
+								<li><a class="dropdown-item" href="#">Compte-rendu Comité Exécutif</a></li>
+							</ul>
+						</div>
+
+						<div class="btn-group dropdown" role="group"> <!-- Bouton Face à la maladie -->
+							<button class="btn btn-dark dropdown-toggle" type="button" 
+							data-bs-toggle="dropdown" aria-expanded="false">
+								Face à la maladie
+							</button>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">NF 1</a></li>
+								<li><a class="dropdown-item" href="#">NF 2</a></li>
+								<li><a class="dropdown-item" href="#">Syndrome de Légius</a></li>
+								<li><a class="dropdown-item" href="#">Schwannomatose</a></li>
+							</ul>
+						</div>
+
+						<div class="btn-group dropdown" role="group"> <!-- Bouton Nos actions -->
+							<button class="btn btn-dark dropdown-toggle" type="button" 
+							data-bs-toggle="dropdown" aria-expanded="false">
+								Nos actions
+							</button>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">La recherche</a></li>
+								<li><a class="dropdown-item" href="#">L'échange</a></li>
+								<li><a class="dropdown-item" href="#">L'information</a></li>
+							</ul>
+						</div>
+
+						<div class="btn-group dropdown" role="group"> <!-- Bouton Agir ensemble -->
+							<button class="btn btn-dark dropdown-toggle" type="button" 
+							data-bs-toggle="dropdown" aria-expanded="false">
+								Agir ensemble
+							</button>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Les manifestations</a></li>
+								<li><a class="dropdown-item" href="#">M.D.R. Expo</a></li>
+								<li><a class="dropdown-item" href="#">Collecte de stylos</a></li>
+								<li><a class="dropdown-item" href="#">À fleur de peau</a></li>
+								<li><a class="dropdown-item" href="#">OSE avec ton commerçant</a></li>
+								<li><a class="dropdown-item" href="#">Nous aider</a></li>
+								<li><a class="dropdown-item" href="#">Contribuer</a></li>
+								<li><a class="dropdown-item" href="#">Agenda</a></li>
+								<li><a class="dropdown-item" href="#">Boutique</a></li>
+								<li><a class="dropdown-item" href="#">Photos</a></li>
+							</ul>
+						</div>
+
+						<div class="btn-group dropdown" role="group"> <!-- Bouton Nous contacter -->
+							<button class="btn btn-dark dropdown-toggle text-wrap" type="button" 
+							data-bs-toggle="dropdown" aria-expanded="false">
+								<img src="graphics/mail_icon.png">
+								Nous contacter
+							</button>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Nous contacter</a></li>
+								<li><a class="dropdown-item" href="#">Collecte de stylos</a></li>
+								<li><a class="dropdown-item" href="#">Près de chez vous</a></li>
+								<li><a class="dropdown-item" href="#">Référent NF2</a></li>
+								<li><a class="dropdown-item" href="#">Référent scolarité</a></li>
+								<li><a class="dropdown-item" href="#">Référent scoliose</a></li>
+								<li><a class="dropdown-item" href="#">Référent pseudarthrose</a></li>
+								<li><a class="dropdown-item" href="#">Référent gliome voies optiques</a></li>
+								<li><a class="dropdown-item" href="#">Coordinateurs</a></li>
+							</ul>
+						</div>
+
+					</div>
+
+					<hr>
+
+					<!-- Deuxième partie boutons navigation -->
+					<div class="btn-group-vertical btn-block d-grid" role="group" 
+					aria-label="Vertical button group">
+
+						<div class="btn-group dropdown" role="group"> <!-- Bouton Espace médias -->
+							<button class="btn btn-dark dropdown-toggle" type="button" 
+							data-bs-toggle="dropdown" aria-expanded="false">
+								Espace médias
+							</button>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Parler de nous</a></li>
+								<li><a class="dropdown-item" href="#">Parler des neurofibromatoses</a></li>
+							</ul>
+						</div>
+
+						<div class="btn-group" role="group"> <!-- Bouton Faire un don -->
+							<button class="btn btn-link" type="button">
+								Faire un don
+							</button>
+						</div>
+
+						<div class="btn-group" role="group"> <!-- Bouton Adhérer -->
+							<button class="btn btn-link" type="button">
+								Adhérer
+							</button>
+						</div>
+
+						<div class="btn-group" role="group"> <!-- Bouton Se connecter -->
+							<button class="btn btn-link" type="button">
+								Se connecter
+							</button>
+						</div>
+
+					</div>
+
+					<hr>
+
+					<!-- Troisième partie réseaux sociaux -->
+					<div class="socialmediablock">
+						<!-- Facebook -->
+						<a href="https://www.facebook.com/Anrfrance/" data-bs-toggle="tooltip"
+						data-bs-title="Facebook" type="button" class="socialmediabutton">
+							<img src="/graphics/social media/ico.facebook.24.color.png">
+						</a>
+
+						<!-- Twitter -->
+						<a href="https://twitter.com/@ANR_FRANCE" data-bs-toggle="tooltip"
+						data-bs-title="Twitter" type="button" class="socialmediabutton">
+							<img src="/graphics/social media/ico.twitter.24.color.png">
+						</a>
+
+						<!-- Youtube -->
+						<a href="https://www.youtube.com/channel/UCUmfCQyPslrN73vPo24nqaA/featured"
+						data-bs-toggle="tooltip" data-bs-title="YouTube" type="button" 
+						class="socialmediabutton">
+							<img src="/graphics/social media/ico.youtube.24.color.png">
+						</a>
+
+						<!-- LinkedIn -->
+						<a href="https://linkedin.com/company/association-neurofibromatoses-et-recklinghausen/"
+						data-bs-toggle="tooltip" data-bs-title="LinkedIn" type="button" 
+						class="socialmediabutton">
+							<img src="/graphics/social media/ico.linkedin.24.color.png">
+						</a>
+
+						<!-- Instagram -->
+						<a href="https://instagram.com/anr_france" data-bs-toggle="tooltip"
+						data-bs-title="Instagram" type="button" class="socialmediabutton">
+							<img src="/graphics/social media/ico.instagram.24.color.png">
+						</a>
+					</div>
+				</div>
+			</div>
+			</div>
+
+				<!-- LARGE SCREENS -->
+			<div class="whitebackground d-none d-xl-block">
 
 				<!-- Première partie boutons navigation -->
 				<div class="btn-group-vertical btn-block d-none d-xl-block" role="group" 
@@ -133,7 +331,7 @@
 
 				</div>
 
-				<hr>
+				<hr class="d-none d-xl-block">
 
 				<!-- Deuxième partie boutons navigation -->
 				<div class="btn-group-vertical btn-block d-none d-xl-block" role="group" 
@@ -170,10 +368,10 @@
 
 				</div>
 
-				<hr>
+				<hr class="d-none d-xl-block">
 
 				<!-- Troisième partie réseaux sociaux -->
-				<div class="socialmediablock">
+				<div class="socialmediablock d-none d-xl-block">
 					<!-- Facebook -->
 					<a href="https://www.facebook.com/Anrfrance/" data-bs-toggle="tooltip"
 					data-bs-title="Facebook" type="button" class="socialmediabutton">
