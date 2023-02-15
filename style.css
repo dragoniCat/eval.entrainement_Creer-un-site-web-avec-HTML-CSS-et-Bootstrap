@@ -80,6 +80,18 @@ nav {
   height: 100%;
 }
 
+.couvlivret {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .couvlivret {
+    width: 100%;
+  }
+}
 h1, h2, p {
   text-align: center;
 }
@@ -95,8 +107,36 @@ h2 {
   color: red;
 }
 
-p {
+p, .p-style {
   font-size: larger;
+}
+
+.pred, .porange, .pgreen, .pblue, .ppurple, .ppink {
+  display: inline;
+}
+
+.pred {
+  color: red;
+}
+
+.porange {
+  color: orange;
+}
+
+.pgreen {
+  color: green;
+}
+
+.pblue {
+  color: blue;
+}
+
+.ppurple {
+  color: purple;
+}
+
+.ppink {
+  color: fuchsia;
 }
 
 .button-container {
@@ -107,6 +147,19 @@ p {
   width: 100%;
 }
 
+.btn-livret {
+  margin-top: 10px;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .btn-livret {
+    width: 100%;
+  }
+}
 footer {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);

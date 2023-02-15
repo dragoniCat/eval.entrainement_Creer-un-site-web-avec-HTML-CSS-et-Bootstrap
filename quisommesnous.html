@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Association Neurofibromatoses et Recklinghausen</title>
+	<meta name="description" content=
+        "L'Association Neurofibromatoses et Recklinghausen (A.N.R.) est née en 1986, 
+        créée par des familles touchées par la maladie. 
+        Elle a pour but de soutenir les malades, leurs familles et la recherche médicale">
+    <link href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+	<header class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col headerstyle"><img src="graphics/Logo.svg" id="logo"></img></div>
+		</div>
+	</header>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-1 d-none d-xxl-flex"></div>
+
+			<!-- NAVIGATION -->
+			<nav class="col-xl-2 colstyle" data-bs-theme="dark">
+				<!-- SMALL SCREENS -->
+			<div>
+			<button class="btn btn-secondary d-xl-none" style="width: 100%;" type="button" 
+			data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+				<img src="/graphics/menu-button-of-three-horizontal-lines.png" width="25px" alt="Menu">
+			</button>
+
+			<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" 
+			id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" 
+					aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<!-- Première partie boutons navigation -->
+					<div class="btn-group-vertical btn-block d-grid" role="group" 
+					aria-label="Vertical button group">
+
+						<div class="btn-group" role="group">
+							<button class="btn btn-dark" type="button" href="/index.html">
+								<img src="graphics/home_icon.png">
+								Accueil
+							</button>
+						</div>
+
+						<div class="btn-group dropdown" role="group"> <!-- Bouton L'association -->
+							<button class="btn btn-dark dropdown-toggle" type="button" 
+							data-bs-toggle="dropdown" aria-expanded="false">
+								L'association
+							</button>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" 
+								href="/quisommesnous.html">
+									Qui sommes-nous?
+								</a></li>
+								<li><a class="dropdown-item" href="#">Notre équipe</a></li>
+								<li><a class="dropdown-item" href="#">Status</a></li>
+								<li><a class="dropdown-item" href="#">Rapports financiers</a></li>
+								<li><a class="dropdown-item" href="#">Rapports d'activité</a></li>
+								<li><a class="dropdown-item" href="#">Revue de presse</a></li>
+							</ul>
+						</div>
+
+						<div class="btn-group dropdown" role="group"> <!-- Bouton La Fondation CAP NF -->
+							<button class="btn btn-dark dropdown-toggle text-wrap" type="button" 
+							data-bs-toggle="dropdown" aria-expanded="false">
+								La Fondation CAP NF
+							</button>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">La Fondation</a></li>
+								<li><a class="dropdown-item" href="#">Compte-rendu Comité Exécutif</a></li>
+							</ul>
+						</div>
+
+						<div class="btn-group dropdown" role="group"> <!-- Bouton Face à la maladie -->
+							<button class="btn btn-dark dropdown-toggle" type="button" 
+							data-bs-toggle="dropdown" aria-expanded="false">
+								Face à la maladie
+							</button>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">NF 1</a></li>
+								<li><a class="dropdown-item" href="#">NF 2</a></li>
+								<li><a class="dropdown-item" href="#">Syndrome de Légius</a></li>
+								<li><a class="dropdown-item" href="#">Schwannomatose</a></li>
+							</ul>
+						</div>
+
+						<div class="btn-group dropdown" role="group"> <!-- Bouton Nos actions -->
+							<button class="btn btn-dark dropdown-toggle" type="button" 
+							data-bs-toggle="dropdown" aria-expanded="false">
+								Nos actions
+							</button>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">La recherche</a></li>
+								<li><a class="dropdown-item" href="#">L'échange</a></li>
+								<li><a class="dropdown-item" href="#">L'information</a></li>
+							</ul>
+						</div>
+
+						<div class="btn-group dropdown" role="group"> <!-- Bouton Agir ensemble -->
+							<button class="btn btn-dark dropdown-toggle" type="button" 
+							data-bs-toggle="dropdown" aria-expanded="false">
+								Agir ensemble
+							</button>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Les manifestations</a></li>
+								<li><a class="dropdown-item" href="#">M.D.R. Expo</a></li>
+								<li><a class="dropdown-item" href="#">Collecte de stylos</a></li>
+								<li><a class="dropdown-item" href="#">À fleur de peau</a></li>
+								<li><a class="dropdown-item" href="#">OSE avec ton commerçant</a></li>
+								<li><a class="dropdown-item" href="#">Nous aider</a></li>
+								<li><a class="dropdown-item" href="#">Contribuer</a></li>
+								<li><a class="dropdown-item" href="#">Agenda</a></li>
+								<li><a class="dropdown-item" href="#">Boutique</a></li>
+								<li><a class="dropdown-item" href="#">Photos</a></li>
+							</ul>
+						</div>
+
+						<div class="btn-group dropdown" role="group"> <!-- Bouton Nous contacter -->
+							<button class="btn btn-dark dropdown-toggle text-wrap" type="button" 
+							data-bs-toggle="dropdown" aria-expanded="false">
+								<img src="graphics/mail_icon.png">
+								Nous contacter
+							</button>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Nous contacter</a></li>
+								<li><a class="dropdown-item" href="#">Collecte de stylos</a></li>
+								<li><a class="dropdown-item" href="#">Près de chez vous</a></li>
+								<li><a class="dropdown-item" href="#">Référent NF2</a></li>
+								<li><a class="dropdown-item" href="#">Référent scolarité</a></li>
+								<li><a class="dropdown-item" href="#">Référent scoliose</a></li>
+								<li><a class="dropdown-item" href="#">Référent pseudarthrose</a></li>
+								<li><a class="dropdown-item" href="#">Référent gliome voies optiques</a></li>
+								<li><a class="dropdown-item" href="#">Coordinateurs</a></li>
+							</ul>
+						</div>
+
+					</div>
+
+					<hr>
+
+					<!-- Deuxième partie boutons navigation -->
+					<div class="btn-group-vertical btn-block d-grid" role="group" 
+					aria-label="Vertical button group">
+
+						<div class="btn-group dropdown" role="group"> <!-- Bouton Espace médias -->
+							<button class="btn btn-dark dropdown-toggle" type="button" 
+							data-bs-toggle="dropdown" aria-expanded="false">
+								Espace médias
+							</button>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Parler de nous</a></li>
+								<li><a class="dropdown-item" href="#">Parler des neurofibromatoses</a></li>
+							</ul>
+						</div>
+
+						<div class="btn-group" role="group"> <!-- Bouton Faire un don -->
+							<button class="btn btn-link" type="button">
+								Faire un don
+							</button>
+						</div>
+
+						<div class="btn-group" role="group"> <!-- Bouton Adhérer -->
+							<button class="btn btn-link" type="button">
+								Adhérer
+							</button>
+						</div>
+
+						<div class="btn-group" role="group"> <!-- Bouton Se connecter -->
+							<button class="btn btn-link" type="button">
+								Se connecter
+							</button>
+						</div>
+
+					</div>
+
+					<hr>
+
+					<!-- Troisième partie réseaux sociaux -->
+					<div class="socialmediablock">
+						<!-- Facebook -->
+						<a href="https://www.facebook.com/Anrfrance/" data-bs-toggle="tooltip"
+						data-bs-title="Facebook" type="button" class="socialmediabutton">
+							<img src="/graphics/social media/ico.facebook.24.color.png">
+						</a>
+
+						<!-- Twitter -->
+						<a href="https://twitter.com/@ANR_FRANCE" data-bs-toggle="tooltip"
+						data-bs-title="Twitter" type="button" class="socialmediabutton">
+							<img src="/graphics/social media/ico.twitter.24.color.png">
+						</a>
+
+						<!-- Youtube -->
+						<a href="https://www.youtube.com/channel/UCUmfCQyPslrN73vPo24nqaA/featured"
+						data-bs-toggle="tooltip" data-bs-title="YouTube" type="button" 
+						class="socialmediabutton">
+							<img src="/graphics/social media/ico.youtube.24.color.png">
+						</a>
+
+						<!-- LinkedIn -->
+						<a href="https://linkedin.com/company/association-neurofibromatoses-et-recklinghausen/"
+						data-bs-toggle="tooltip" data-bs-title="LinkedIn" type="button" 
+						class="socialmediabutton">
+							<img src="/graphics/social media/ico.linkedin.24.color.png">
+						</a>
+
+						<!-- Instagram -->
+						<a href="https://instagram.com/anr_france" data-bs-toggle="tooltip"
+						data-bs-title="Instagram" type="button" class="socialmediabutton">
+							<img src="/graphics/social media/ico.instagram.24.color.png">
+						</a>
+					</div>
+				</div>
+			</div>
+			</div>
+
+				<!-- LARGE SCREENS -->
+			<div class="whitebackground d-none d-xl-block">
+
+				<!-- Première partie boutons navigation -->
+				<div class="btn-group-vertical btn-block d-none d-xl-block" role="group" 
+				aria-label="Vertical button group">
+
+				<div class="btn-group" role="group">
+				<button class="btn btn-secondary" type="button" href="/index.html">
+					<img src="graphics/home_icon.png">
+					Accueil
+				</button>
+				</div>
+
+				<div class="btn-group dropend" role="group"> <!-- Bouton L'association -->
+					<button class="btn btn-secondary dropdown-toggle" type="button" 
+					data-bs-toggle="dropdown" aria-expanded="false">
+						L'association
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" 
+						href="/quisommesnous.html">
+							Qui sommes-nous?
+						</a></li>
+						<li><a class="dropdown-item" href="#">Notre équipe</a></li>
+						<li><a class="dropdown-item" href="#">Status</a></li>
+						<li><a class="dropdown-item" href="#">Rapports financiers</a></li>
+						<li><a class="dropdown-item" href="#">Rapports d'activité</a></li>
+						<li><a class="dropdown-item" href="#">Revue de presse</a></li>
+					</ul>
+				</div>
+
+				<div class="btn-group dropend" role="group"> <!-- Bouton La Fondation CAP NF -->
+					<button class="btn btn-secondary dropdown-toggle text-wrap" type="button" 
+					data-bs-toggle="dropdown" aria-expanded="false">
+						La Fondation CAP NF
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">La Fondation</a></li>
+						<li><a class="dropdown-item" href="#">Compte-rendu Comité Exécutif</a></li>
+					</ul>
+				</div>
+
+				<div class="btn-group dropend" role="group"> <!-- Bouton Face à la maladie -->
+					<button class="btn btn-secondary dropdown-toggle" type="button" 
+					data-bs-toggle="dropdown" aria-expanded="false">
+						Face à la maladie
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">NF 1</a></li>
+						<li><a class="dropdown-item" href="#">NF 2</a></li>
+						<li><a class="dropdown-item" href="#">Syndrome de Légius</a></li>
+						<li><a class="dropdown-item" href="#">Schwannomatose</a></li>
+					</ul>
+				</div>
+
+				<div class="btn-group dropend" role="group"> <!-- Bouton Nos actions -->
+					<button class="btn btn-secondary dropdown-toggle" type="button" 
+					data-bs-toggle="dropdown" aria-expanded="false">
+						Nos actions
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">La recherche</a></li>
+						<li><a class="dropdown-item" href="#">L'échange</a></li>
+						<li><a class="dropdown-item" href="#">L'information</a></li>
+					</ul>
+				</div>
+
+				<div class="btn-group dropend" role="group"> <!-- Bouton Agir ensemble -->
+					<button class="btn btn-secondary dropdown-toggle" type="button" 
+					data-bs-toggle="dropdown" aria-expanded="false">
+						Agir ensemble
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Les manifestations</a></li>
+						<li><a class="dropdown-item" href="#">M.D.R. Expo</a></li>
+						<li><a class="dropdown-item" href="#">Collecte de stylos</a></li>
+						<li><a class="dropdown-item" href="#">À fleur de peau</a></li>
+						<li><a class="dropdown-item" href="#">OSE avec ton commerçant</a></li>
+						<li><a class="dropdown-item" href="#">Nous aider</a></li>
+						<li><a class="dropdown-item" href="#">Contribuer</a></li>
+						<li><a class="dropdown-item" href="#">Agenda</a></li>
+						<li><a class="dropdown-item" href="#">Boutique</a></li>
+						<li><a class="dropdown-item" href="#">Photos</a></li>
+					</ul>
+				</div>
+
+				<div class="btn-group dropend" role="group"> <!-- Bouton Nous contacter -->
+					<button class="btn btn-secondary dropdown-toggle text-wrap" type="button" 
+					data-bs-toggle="dropdown" aria-expanded="false">
+						<img src="graphics/mail_icon.png">
+						Nous contacter
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Nous contacter</a></li>
+						<li><a class="dropdown-item" href="#">Collecte de stylos</a></li>
+						<li><a class="dropdown-item" href="#">Près de chez vous</a></li>
+						<li><a class="dropdown-item" href="#">Référent NF2</a></li>
+						<li><a class="dropdown-item" href="#">Référent scolarité</a></li>
+						<li><a class="dropdown-item" href="#">Référent scoliose</a></li>
+						<li><a class="dropdown-item" href="#">Référent pseudarthrose</a></li>
+						<li><a class="dropdown-item" href="#">Référent gliome voies optiques</a></li>
+						<li><a class="dropdown-item" href="#">Coordinateurs</a></li>
+					</ul>
+				</div>
+
+				</div>
+
+				<hr class="d-none d-xl-block">
+
+				<!-- Deuxième partie boutons navigation -->
+				<div class="btn-group-vertical btn-block d-none d-xl-block" role="group" 
+				aria-label="Vertical button group">
+
+				<div class="btn-group dropend" role="group"> <!-- Bouton Espace médias -->
+					<button class="btn btn-secondary dropdown-toggle" type="button" 
+					data-bs-toggle="dropdown" aria-expanded="false">
+						Espace médias
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Parler de nous</a></li>
+						<li><a class="dropdown-item" href="#">Parler des neurofibromatoses</a></li>
+					</ul>
+				</div>
+
+				<div class="btn-group" role="group"> <!-- Bouton Faire un don -->
+					<button class="btn btn-danger" type="button">
+						Faire un don
+					</button>
+				</div>
+
+				<div class="btn-group" role="group"> <!-- Bouton Adhérer -->
+					<button class="btn btn-danger" type="button">
+						Adhérer
+					</button>
+				</div>
+
+				<div class="btn-group" role="group"> <!-- Bouton Se connecter -->
+					<button class="btn btn-danger" type="button">
+						Se connecter
+					</button>
+				</div>
+
+				</div>
+
+				<hr class="d-none d-xl-block">
+
+				<!-- Troisième partie réseaux sociaux -->
+				<div class="socialmediablock d-none d-xl-block">
+					<!-- Facebook -->
+					<a href="https://www.facebook.com/Anrfrance/" data-bs-toggle="tooltip"
+					data-bs-title="Facebook" type="button" class="socialmediabutton">
+						<img src="/graphics/social media/ico.facebook.24.color.png">
+					</a>
+
+					<!-- Twitter -->
+					<a href="https://twitter.com/@ANR_FRANCE" data-bs-toggle="tooltip"
+					data-bs-title="Twitter" type="button" class="socialmediabutton">
+						<img src="/graphics/social media/ico.twitter.24.color.png">
+					</a>
+
+					<!-- Youtube -->
+					<a href="https://www.youtube.com/channel/UCUmfCQyPslrN73vPo24nqaA/featured"
+					data-bs-toggle="tooltip" data-bs-title="YouTube" type="button" 
+					class="socialmediabutton">
+						<img src="/graphics/social media/ico.youtube.24.color.png">
+					</a>
+
+					<!-- LinkedIn -->
+					<a href="https://linkedin.com/company/association-neurofibromatoses-et-recklinghausen/"
+					data-bs-toggle="tooltip" data-bs-title="LinkedIn" type="button" 
+					class="socialmediabutton">
+						<img src="/graphics/social media/ico.linkedin.24.color.png">
+					</a>
+
+					<!-- Instagram -->
+					<a href="https://instagram.com/anr_france" data-bs-toggle="tooltip"
+					data-bs-title="Instagram" type="button" class="socialmediabutton">
+						<img src="/graphics/social media/ico.instagram.24.color.png">
+					</a>
+				</div>
+
+			</div>
+			</nav>
+
+			<!-- MAIN -->
+			<main role="main" class="col-md colstyle">
+
+				<div class="main-col whitebackground">
+
+					<h1 class="main-h1">L'association</h1>
+					<div class="card">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col">
+									<ul>
+										<li class="p-style">Née en 1986,</li>
+										<li class="p-style">Modifiée en 1998,</li>
+										<li class="p-style">
+											Reconnue comme établissement d'<b>utilité publique</b> 
+											le 3 mai 2004
+										</li>
+										<li class="p-style"><b>1 200</b> adhérents</li>
+										<li class="p-style">Un conseil d'administration de 10 membres</li>
+										<li class="p-style">Des délégations locales et thématiques</li>
+										<li class="p-style">Un conseil scientifique</li>
+										<li class="p-style">Une instance consultative</li>
+										<li class="p-style">
+											<b>Adhérente à l'Alliance Maladies Rares et Eurodis</b>
+										</li>
+									</ul>
+								</div>
+								<div class="col-sm">
+									<img src="/graphics/visuel_amr_eurordis.png" alt="Logos de 
+									l'Alliance Maladies Rares et d'Eurodis (Rare Diseases Europe)"
+									width="100%">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h1 class="main-h1">Objectifs</h1>
+					<div class="card">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col">
+									<img src="/graphics/MageInforme.png" alt="La mascotte de 
+									l'association, un petit personnage souriant habillé en magicien 
+									avec une cape à motif coccinelle, avec au dessus les mots 
+									'Diffuser', 'Informer', 'Orienter', 'Récolter', 'Ecouter' et 
+									'Soutenir'" width="100%">
+								</div>
+								<div class="col-sm">
+									<p>L'association, 100% bénévole, a pour buts principaux:</p>
+									<ul>
+										<li class="p-style">
+											<div class="pred">Ecouter</div> 
+											les malades et leurs proches;
+										</li>
+										<li class="p-style">
+											<div class="pgreen">Orienter</div> 
+											vers les équipes médicales;
+										</li>
+										<li class="p-style">
+											<div class="pblue">Informer</div> 
+											des derniers développements de la recherche;
+										</li>
+										<li class="p-style">
+											<div class="porange">Diffuser</div> de l'information vers le monde médical, 
+											paramédical, vers le grand public;
+										</li>
+										<li class="p-style">
+											<div class="ppurple">Récolter</div> 
+											des fonds (information et recherche);
+										</li>
+										<li class="p-style">
+											<div class="ppink">Soutenir</div> 
+											la recherche en participant à ses travaux et en
+											finançant des projets
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col">
+									<p>L'Association Neurofibromatoses et Recklinghausen a reçu en 
+									2012 <b>un diplôme de mérite et de prestige européen</b> au 
+									titre du soutien à la recherche expérimentale et aux travaux 
+									moléculaires et biologiques, par le Comité de l'Europe pour les 
+									Etudes et Informations Parlementaires;</p>
+								</div>
+								<div class="col-sm-4">
+									<img src="/graphics/LOGO-COMITÉ-DE-L'EUROPE.png" alt="Logo du 
+									Comité de l'Europe pour les Etudes et Informations Parlementaires"
+									width="100%">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<hr style="padding: 10px;">
+
+					<div class="card" style="margin-left: 25px; margin-right: 25px; background-color: rgba(176, 198, 230, 0.35);">
+						<img src="/graphics/livret.jpg" alt="Couverture du livret 
+						Association" class="couvlivret">
+						<button class="btn btn-danger btn-livret" type="button" 
+						href="https://site.assoconnect.com/services/storage?type=document&id=838582&secret=xcvHbMJ18m4kCBPC0vi1elGMAXLOVAJHifocgH8d&timestamp=1588151344&download=1">
+							📎Télécharger le livret Association
+						</button>
+					</div>
+
+					<hr style="padding: 10px;">
+
+					<div class="card">
+						<div class="responsive-video-container">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/hucc_ByJR6Y" 
+							title="YouTube video player" frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+							gyroscope; picture-in-picture; web-share" 
+							allowfullscreen class="responsive-video"></iframe>
+						</div>
+						<div class="col-sm">
+							<h2>Journées Neurofibromatoses - 2016</h2>
+							<p>Intervention à l'occasion des 30 ans de l'association avec un rappel 
+							de son histoire.</p>
+							<p>Perspectives de l'association: Laboratoire dédié aux 
+							Neurofibromatoses, Création de la Fondation, Paris 2018.</p>
+						</div>
+					</div>
+
+					<hr style="padding: 10px;">
+
+				</div>
+
+			</main>
+
+			<!-- ASIDE -->
+			<aside class="col-lg-3 colstyle">
+				<div class="whitebackground">
+				
+				<div class="responsive-video-container">
+					<iframe width="100%" height="300px" src="https://www.youtube.com/embed/uBJnXSZDf6E" 
+					title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+					clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+					allowfullscreen class="responsive-video"></iframe>
+				</div>
+				<p><b>OSE</b> en savoir plus sur l'association en regardant cette vidéo!</p>
+				<hr>
+				<h1 class="main-h1">Bientôt</h1>
+				<img src="/graphics/Affiche_JourneesNF.jpg" alt="Affiche pour les Journées 
+				Neurofibromatoses 2023, le Samedi 25 Mars et Dimanche 26 Mars aux Villages Clubs du 
+				Soleil, 23 rue François Simon à Marseille" width="100%">
+				<div class="button-container d-grid gap-2">
+					<button class="btn btn-danger">
+						S'inscrire
+					</button>
+				</div>
+				<hr>
+				<img src="/graphics/Affiche_Chorale.jpg" alt="Affiche pour la chorale Esperanza au 
+				profit de l'A.N.R., le Samedi 4 Mars à 16h dans la salle des fêtes de Lanzac. Le 
+				prix d'entrée est de 5€" width="100%">
+				<hr>
+				<h1 class="main-h1">Agenda</h1>
+				<div class="card" style="margin: 1rem;">
+					<div class="card-body">
+						<h5 class="card-title">Aujourd'hui</h5>
+						<hr>
+						<div class="card-text" style="text-align: start; margin-bottom: 1rem;">
+							Il n'y a pas d'évènement dans la journée
+						</div>
+						<h5 class="card-title">À venir dans le mois</h5>
+						<hr>
+						<ul>
+							<div> <!-- Permanence CHU Morvan Brest -->
+							<li><a type="link" class="link-danger" 
+							data-bs-toggle="modal" data-bs-target="#Modal1">
+								Permanence CHU Morvan Brest
+							</a></li>
+
+							<div class="modal fade" id="Modal1" tabindex="-1" 
+							aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h1 class="modal-title fs-5" id="exampleModalLabel">
+												Permanence CHU Morvan Brest
+											</h1>
+											<button type="button" class="btn-close" 
+											data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											05/02/2023
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
+
+							<div> <!-- Permanence NF2 Pitié Salpêtrière -->
+								<li><a type="link" class="link-danger" 
+								data-bs-toggle="modal" data-bs-target="#Modal2">
+									Permanence NF2 Pitié Salpêtrière
+								</a></li>
+	
+								<div class="modal fade" id="Modal2" tabindex="-1" 
+								aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h1 class="modal-title fs-5" id="exampleModalLabel">
+													Permanence NF2 Pitié Salpêtrière
+												</h1>
+												<button type="button" class="btn-close" 
+												data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body">
+												10/02/2023
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div> <!-- Permanence Pitié Salpêtrière -->
+								<li><a type="link" class="link-danger" 
+								data-bs-toggle="modal" data-bs-target="#Modal3">
+									Permanence Pitié Salpêtrière
+								</a></li>
+	
+								<div class="modal fade" id="Modal3" tabindex="-1" 
+								aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h1 class="modal-title fs-5" id="exampleModalLabel">
+													Permanence Pitié Salpêtrière
+												</h1>
+												<button type="button" class="btn-close" 
+												data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body">
+												14/02/2023
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</ul>
+
+						<h5 class="card-title">À venir le mois prochain</h5>
+						<hr>
+						<ul>
+							<div> <!-- Permanence CHU Morvan Brest -->
+								<li><a type="link" class="link-danger" 
+								data-bs-toggle="modal" data-bs-target="#Modal4">
+									Permanence CHU Morvan Brest
+								</a></li>
+	
+								<div class="modal fade" id="Modal4" tabindex="-1" 
+								aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h1 class="modal-title fs-5" id="exampleModalLabel">
+													Permanence CHU Morvan Brest
+												</h1>
+												<button type="button" class="btn-close" 
+												data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body">
+												02/03/2023
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div> <!-- Chorale à Lanzac -->
+								<li><a type="link" class="link-danger" 
+								data-bs-toggle="modal" data-bs-target="#Modal5">
+									Chorale à Lanzac
+								</a></li>
+	
+								<div class="modal fade" id="Modal5" tabindex="-1" 
+								aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h1 class="modal-title fs-5" id="exampleModalLabel">
+													Chorale à Lanzac
+												</h1>
+												<button type="button" class="btn-close" 
+												data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body">
+												04/03/2023
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</ul>
+					</div>
+				</div>
+				
+
+				</div>
+			</aside>
+
+			<div class="col-1 d-none d-xxl-flex"></div>
+		</div>
+	</div>
+
+	<footer class="container-fluid">
+		<div class="row">
+			<adress class="col">
+                A.N.R.<br>
+                53 rue Jules Verne<br>
+                59960 Neuville-en-Ferrain<br>
+                03 20 54 72 76<br>
+				<a href="mailto:contact@anrfrance.fr">contact@anrfrance.fr</a>
+			</adress>
+			<div class="col">
+				Plan du site<br>
+				Licenses<br>
+				Mentions légales<br>
+				CGUV<br>
+				Paramétrer les cookies
+			</div>
+			<div class="col-md-8"></div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+	integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+	crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+
+</body>
+	
+</html>
